@@ -1,0 +1,89 @@
+<!doctype html>
+<html data-theme="lemonade">
+<head>
+  <meta charset="UTF-8">
+  <title>Домашняя страница</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-base-200 min-h-screen text-base-content">
+  <header class="py-6 bg-base-200 text-center">
+    <h1 class="text-3xl font-bold text-center text-primary">Домашняя страница</h1>
+  </header>
+  
+
+  <main class="container mx-auto px-4 max-w-4xl">
+
+
+  <div class="card card-side shadow-sm mb-6 bg-primary">
+    <div class="card-body p-6 lg:p-8">
+      <h2 class="card-title text-xl lg:text-2xl mb-2 underline  text-primary-content">
+        Основная информация
+      </h2>
+      <ul class="list-disc list-inside space-y-2 text-base text-base-content/90">
+        <li>Фамилия имя: Правкин Даниил</li>
+        <li>Место обучения: СПБГУ</li>
+        <li>Программа обучения: программная инженерия</li>
+        <li>Обучение в данный момент: бакалавриат, 2 курс</li>
+      </ul>
+    </div>
+
+    <figure class="shrink-0">
+      <img 
+        src="img/portrait.jpg" 
+        alt="Фото" 
+        class="w-40 h-full object-cover lg:w-56"
+      >
+    </figure>
+  </div>
+
+
+  <div class="px-2 mb-6">
+    <h3 class="card-title text-l lg:text-2xl mb-2 text-primary-content">
+        Чуть более подробно о себе
+    </h3>
+    <p class="text-base text-base-content/80 leading-relaxed">
+      Меня зовут Правкин Даниил, я обучаюсь в СПБГУ по программе бакалавриата "Программная инженерия" на 2 курсе. На данный момент активных проектов нет. Наиболее предпочитаемого предмета изучения нет, поскольку интересно всё (но обычно на это всё не хваатает времени), но в целом интересуюсь предметами, которые содержат много аспектов и требуют долгого изучения (например операционные системы, компьютерные сети), а так же те, в которых есть научные стороны (например теория автоматов, теория вычислений). Имею некоторые хобби: чтение, езда на велосипеде/лонгборде, конструкторы и сборные модели, компьютерные игры, пазлы, головоломки, рисование, анимация.
+    </p>
+  </div>
+
+  
+  <div class="card bg-base-100 shadow-md bg-secondary">
+    <div class="card-body p-6 lg:p-8">
+      <h2 class="card-title text-xl lg:text-2xl mb-4">Контакты и прочие ссылки</h2>
+      <ul class="space-y-4 text-sm lg:text-base">
+
+        <li class="flex items-start gap-3">
+          <div class="flex items-center gap-2">
+            <img src="img/vk.svg" alt="vk" class="w-6 h-6">
+            <h2 class="card-title">VK: </h2>
+            <a href="https://vk.ru/pravdan_09" class="link link-hover text-base-content/80">
+              @pravdan_09
+            </a>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <div class="flex items-center gap-2">
+            <img src="img/github.svg" alt="github" class="w-6 h-6">
+            <h2 class="card-title">GitHub: </h2>
+            <a href="https://github.com/Prosto-Dan" class="link link-hover text-base-content/80">
+              Prosto-Dan 
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+
+  </main>
+
+
+  <footer class="text-center text-sm text-base-content/50 py-3">
+    Данный сайт создан в учебных целях.
+  </footer>
+</body>
+</html>
