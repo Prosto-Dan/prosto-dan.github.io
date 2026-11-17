@@ -1,37 +1,49 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114312200', 'ym');
+
+    ym(114312200, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/114312200" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <title>Домашняя страница</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-primary-l dark:bg-primary-d">
 
 
-  <header class="flex items-center bg-white sticky top-0 z-50">
+  <header class="flex items-center bg-btn-l dark:bg-secondary-l sticky top-0 z-50 text-gray-900">
     <nav class="flex w-full items-center justify-between">
-      <a href="#info" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">О себе</a>
-      <a href="#skills" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Навыки</a>
-      <a href="#projects" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Проекты</a>
-      <a href="#contacts" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Ссылки</a>
+      <a href="#info" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center hover:text-white hover:bg-third transition-colors h-12">О себе</a>
+      <a href="#projects" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center hover:text-white hover:bg-third transition-colors h-12">Проекты</a>
+      <a href="#contacts" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center hover:text-white hover:bg-third transition-colors h-12">Ссылки</a>
     </nav>
   </header>
 
 
-  <section class="bg-gray-100 dark:bg-gray-900">
+  <section id="info" class="scroll-mt-12">
     <div class="grid max-w-screen-xl px-4 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-14">
       <div class="place-self-center lg:col-span-7 text-center">
-        <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Название</h1>
-        <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Меня зовут Правкин Даниил. Я являюсь студентом бакалавриата СПБГУ на Математико-механическом факультете, 2 курс.
+        <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Правкин Даниил</h1>
+        <p class="max-w-2xl font-light text-text-l text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Меня зовут Правкин Даниил. Я являюсь студентом бакалавриата СПБГУ на Математико-механическом факультете, 2 курс.
         </p>
-        <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Направление подготовки - программная инженерия.
+        <p class="max-w-2xl font-light text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Направление подготовки - программная инженерия.
         </p>
       </div>
       <div class="flex items-center justify-center lg:col-span-5 mt-8 lg:mt-0">
         <img 
-          src="img/avatar.png" 
+          src="img/portrait.jpg" 
           alt="photo"
           class="w-48 h-48 md:w-64 md:h-64 lg:w-full lg:h-auto max-w-sm rounded-xl object-cover shadow-lg"
         >
@@ -40,45 +52,44 @@
   </section>
 
 
-  <section class="px-4 sm:px-6 lg:px-8 mb-4">
-    <div class="mx-auto max-w-screen-xl px-6 py-4 space-y-12 lg:space-y-20 lg:py-16 lg:px-6 text-gray-500 sm:text-lg dark:text-gray-400 rounded-xl border border-gray-400 bg-white p-6 shadow-sm transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-xl">
+  <section class="px-4 sm:px-6 lg:px-8 mb-4 text-gray-700 dark:text-gray-200">
+    <div class="mx-auto max-w-screen-xl px-6 py-4 space-y-12 lg:space-y-20 lg:py-16 lg:px-6 sm:text-lg rounded-xl border border-primary-d dark:bg-secondary-d dark:border-primary-l bg-white p-6 shadow-sm transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-xl">
       <h2 class="mb-4 text-xl font-extrabold tracking-tight text-gray-900 dark:text-white">Чуть подробнее</h2>
-      <p class="mb-4 font-light lg:text-xl">Наиболее предпочитаемого предмета изучения нет, поскольку интересно всё (но обычно на это всё времени не хватает), но в целом интересуюсь предметами, которые содержат много аспектов и требуют долгого изучения (например операционные системы, компьютерные сети), а так же те, в которых есть научные стороны (например теория автоматов, теория вычислений). Имею некоторые хобби: чтение, езда на велосипеде/лонгборде, конструкторы и сборные модели, компьютерные игры, пазлы, головоломки, рисование, анимация.</p>
+      <p class="mb-4 font-light lg:text-xl">Наиболее предпочитаемого предмета изучения нет, поскольку интересно многое (но обычно на это всё времени не хватает), но в целом интересуюсь предметами, которые содержат много аспектов и требуют долгого изучения (например операционные системы, компьютерные сети), а так же те, в которых есть научные стороны (например теория автоматов, теория вычислений). Кроме того, порой интересно разбираться в математических дисциплинах.</p>
+      <p class="mb-4 font-light lg:text-xl">Изучаемые языки программирования: C, Kotlin, C++, Zig.</p>
+      <p class="mb-4 font-light lg:text-xl">Имею некоторые хобби: чтение, езда на велосипеде/лонгборде, конструкторы и сборные модели, головоломки, компьютерные игры, спидкубинг, пазлы, рисование, анимация.</p>
     </div>
   </section>
 
 
-  <div id="skills">Навыки</div>
-
-
-  <section id="projects" class="pb-2 pt-2 bg-gray-200 px-4 sm:px-6 lg:px-8 mx-auto lg:pb-4 lg:pt-4">
-    <h2 class="mb-2 text-xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">Проекты</h2>
+  <section id="projects" class="pb-4 pt-2 px-4 sm:px-6 lg:px-8 mx-auto lg:pb-4 lg:pt-4 scroll-mt-12 bg-secondary-l dark:bg-secondary-d">
+    <h2 class="mb-2 text-2xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">Проекты</h2>
     <div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl dark:bg-primary-d dark:text-gray-200">
           <h3 class="text-lg font-semibold">Vortex: освоение FPGA-стека</h3>
-          <div class="pt-3 text-md text-gray-600">
+          <div class="pt-3 font-light text-md text-gray-800 dark:text-gray-200">
             <p>Vortex - это проект с открытым исходным кодом для поддержки GPGPU на основе расширений RISC-V ISA.</p>
-            <p>Данная учебная работа направлена на получение первичных навыков работы с FPGA-стеком.</p>
-            <a href="https://github.com/Prosto-Dan/vortex_practice_1_year" target="_blank" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Подробнее</a>
+            <p>Данная учебная работа направлена на получение первичных навыков работы с FPGA-стеком. Для этого был проведён эксперимент по измерению масштабируемости функции умножения матриц.</p>
+            <a href="https://github.com/Prosto-Dan/vortex_practice_1_year" target="_blank" class="text-emerald-600 underline hover:text-emerald-800 dark:text-emerald-200 dark:hover:text-emerald-400">Подробнее</a>
           </div>
         </div>
 
-        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl dark:bg-primary-d dark:text-gray-200">
           <h3 class="text-lg font-semibold">Разработка Android-приложения для получения прогноза погоды</h3>
-          <div class="pt-3 text-md text-gray-600">
+          <div class="pt-3 font-light text-md text-gray-800 dark:text-gray-200">
             <p>Учебный проект, направленный на изучение основ ООП. Результат работы - приложение, способное получать прогноз погоды с помощью OpenMeteo API и сохранять эти данные в кэш. Использованные технологии: Kotlin, Jetpack Compose, SQLite (Room), UI-тестирование, unit-тестирование.</p>
-            <a href="https://sourcecraft.dev/spbu-coding-2025/weather-cube-dan" target="_blank" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Подробнее</a>
+            <a href="https://sourcecraft.dev/spbu-coding-2025/weather-cube-dan" target="_blank" class="text-emerald-600 underline hover:text-emerald-800 dark:text-emerald-200 dark:hover:text-emerald-400">Подробнее</a>
           </div>
         </div>
 
-        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl dark:bg-primary-d dark:text-gray-200">
           <h3 class="text-lg font-semibold">Оптимизация поддержки литералов в виртуальной машине bancai</h3>
-          <div class="pt-3 text-md text-gray-600">
-            <p>Bancai - это интерпретатор interaction nets, созданный на основе <a href="https://github.com/inpla/inpla" target="_blank" class="text-blue-600 hover:text-blue-800 visited:text-purple-600">Inpla</a>. Цель работы - увеличение производительности за счёт изменения представления числовых литералов. Используемый язык программирования - zig.
+          <div class="pt-3 font-light text-md text-gray-800 dark:text-gray-200">
+            <p>Bancai - это интерпретатор interaction nets. Цель работы - увеличение производительности за счёт изменения представления числовых литералов. Используемый язык программирования - Zig.
             </p>
-            <a href="https://github.com/Lamagraph/bancai" target="_blank" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Подробнее</a>
+            <a href="https://github.com/Lamagraph/bancai" target="_blank" class="text-emerald-600 underline hover:text-emerald-800 dark:text-emerald-200 dark:hover:text-emerald-400">Подробнее</a>
           </div>
         </div>
       </div>
@@ -87,10 +98,38 @@
   </section>
 
 
-  <div id="contacts">Ссылки (vk, github, sourcecraft)</div>
+  <section id="contacts" class="text-gray-800 bg-cnts flex flex-wrap justify-around gap-3 p-6 scroll-mt-12">
+    <a href="https://github.com/Prosto-Dan" target="_blank" class="inline-flex items-center gap-2 rounded-full bg-btn-l dark:bg-btn-d px-4 py-2 text-sm font-medium transition ring-5 ring-transparent hover:ring-black">
+      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.35-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.74 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+      </svg>
+      Prosto-Dan
+    </a>
 
 
-  <footer></footer>
+    <a href="https://sourcecraft.dev/users/cube-dan/overview" target="_blank" class="inline-flex items-center gap-2 rounded-full bg-btn-l dark:bg-btn-d px-4 py-2 text-sm font-medium transition ring-5 ring-transparent hover:ring-red-500">
+      <svg class="h-6 w-6" viewBox="0 0 263 263" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 52.5333L77.9792 0L55.9453 102.567L13.1352 131.333L116.969 201.104L77.9792 262.667L0 210.133V52.5333ZM227.892 116.792L249.532 131.333L145.698 201.104L184.688 262.667L262.667 210.133V61.5637L227.892 116.792Z" fill="#FF3333"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M187.562 131.329H150.625L169.75 42.2984L113.687 131.337H76.7495L100.552 20.5208H174.429H257.333L187.562 131.329Z" fill="black"/>
+      </svg>
+      cube-dan
+    </a>
+
+    <a href="https://vk.ru/pravdan_09" target="_blank" class="inline-flex items-center gap-2 rounded-full bg-btn-l dark:bg-btn-d px-4 py-2 text-sm font-medium transition ring-5 ring-transparent hover:ring-blue-600">
+      <svg class="h-6 w-6" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 48C0.5 25.3726 0.5 14.0589 7.52944 7.02944C14.5589 0 25.8726 0 48.5 0H52.5C75.1274 0 86.4411 0 93.4706 7.02944C100.5 14.0589 100.5 25.3726 100.5 48V52C100.5 74.6274 100.5 85.9411 93.4706 92.9706C86.4411 100 75.1274 100 52.5 100H48.5C25.8726 100 14.5589 100 7.52944 92.9706C0.5 85.9411 0.5 74.6274 0.5 52V48Z" fill="#0077FF"/>
+        <path d="M53.7085 72.042C30.9168 72.042 17.9169 56.417 17.3752 30.417H28.7919C29.1669 49.5003 37.5834 57.5836 44.25 59.2503V30.417H55.0004V46.8752C61.5837 46.1669 68.4995 38.667 70.8329 30.417H81.5832C79.7915 40.5837 72.2915 48.0836 66.9582 51.1669C72.2915 53.6669 80.8336 60.2086 84.0836 72.042H72.2499C69.7082 64.1253 63.3754 58.0003 55.0004 57.1669V72.042H53.7085Z" fill="white"/>
+      </svg>
+      @pravdan_09
+    </a>
+  </section>
+
+
+  <footer class="bg-third text-slate-300">
+    <div class="mx-auto max-w-6xl px-6 py-6">
+      <p class="text-sm text-center">Данный сайт создан в учебных целях при помощи tailwind.</p>
+    </div>
+  </footer>
 
 </body>
 
