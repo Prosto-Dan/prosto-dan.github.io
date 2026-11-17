@@ -7,23 +7,26 @@
   <link href="src/output.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="flex items-center bg-white">
+<body class="bg-gray-100">
 
+
+  <header class="flex items-center bg-white sticky top-0 z-50">
     <nav class="flex w-full items-center justify-between">
-      <a href="#info" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Инфо</a>
+      <a href="#info" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">О себе</a>
       <a href="#skills" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Навыки</a>
-      <a href="#interests" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Проекты</a>
+      <a href="#projects" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Проекты</a>
       <a href="#contacts" class="text-sm md:text-base lg:text-lg flex flex-1 items-center justify-center text-gray-600 hover:text-white hover:bg-blue-600 transition-colors h-12">Ссылки</a>
     </nav>
-
   </header>
+
 
   <section class="bg-gray-100 dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-4 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-14">
       <div class="place-self-center lg:col-span-7 text-center">
         <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Название</h1>
-        <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Меня зовут Правкин Даниил. Я учусь в СПБГУ на Математико-механическом факультете на 2-ом курсе бакалавриата. Программа обучения: программная инженерия.
+        <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Меня зовут Правкин Даниил. Я являюсь студентом бакалавриата СПБГУ на Математико-механическом факультете, 2 курс.
+        </p>
+        <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">Направление подготовки - программная инженерия.
         </p>
       </div>
       <div class="flex items-center justify-center lg:col-span-5 mt-8 lg:mt-0">
@@ -37,13 +40,51 @@
   </section>
 
 
+  <section class="px-4 sm:px-6 lg:px-8 mb-4">
+    <div class="mx-auto max-w-screen-xl px-6 py-4 space-y-12 lg:space-y-20 lg:py-16 lg:px-6 text-gray-500 sm:text-lg dark:text-gray-400 rounded-xl border border-gray-400 bg-white p-6 shadow-sm transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-xl">
+      <h2 class="mb-4 text-xl font-extrabold tracking-tight text-gray-900 dark:text-white">Чуть подробнее</h2>
+      <p class="mb-4 font-light lg:text-xl">Наиболее предпочитаемого предмета изучения нет, поскольку интересно всё (но обычно на это всё времени не хватает), но в целом интересуюсь предметами, которые содержат много аспектов и требуют долгого изучения (например операционные системы, компьютерные сети), а так же те, в которых есть научные стороны (например теория автоматов, теория вычислений). Имею некоторые хобби: чтение, езда на велосипеде/лонгборде, конструкторы и сборные модели, компьютерные игры, пазлы, головоломки, рисование, анимация.</p>
+    </div>
+  </section>
+
+
   <div id="skills">Навыки</div>
 
 
-  <div id="projects">Проекты</div>
+  <section id="projects" class="pb-2 pt-2 bg-gray-200 px-4 sm:px-6 lg:px-8 mx-auto lg:pb-4 lg:pt-4">
+    <h2 class="mb-2 text-xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">Проекты</h2>
+    <div>
 
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+          <h3 class="text-lg font-semibold">Vortex: освоение FPGA-стека</h3>
+          <div class="pt-3 text-md text-gray-600">
+            <p>Vortex - это проект с открытым исходным кодом для поддержки GPGPU на основе расширений RISC-V ISA.</p>
+            <p>Данная учебная работа направлена на получение первичных навыков работы с FPGA-стеком.</p>
+            <a href="https://github.com/Prosto-Dan/vortex_practice_1_year" target="_blank" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Подробнее</a>
+          </div>
+        </div>
 
-  <div id="interests">Хобби</div>
+        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+          <h3 class="text-lg font-semibold">Разработка Android-приложения для получения прогноза погоды</h3>
+          <div class="pt-3 text-md text-gray-600">
+            <p>Учебный проект, направленный на изучение основ ООП. Результат работы - приложение, способное получать прогноз погоды с помощью OpenMeteo API и сохранять эти данные в кэш. Использованные технологии: Kotlin, Jetpack Compose, SQLite (Room), UI-тестирование, unit-тестирование.</p>
+            <a href="https://sourcecraft.dev/spbu-coding-2025/weather-cube-dan" target="_blank" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+          <h3 class="text-lg font-semibold">Оптимизация поддержки литералов в виртуальной машине bancai</h3>
+          <div class="pt-3 text-md text-gray-600">
+            <p>Bancai - это интерпретатор interaction nets, созданный на основе <a href="https://github.com/inpla/inpla" target="_blank" class="text-blue-600 hover:text-blue-800 visited:text-purple-600">Inpla</a>. Цель работы - увеличение производительности за счёт изменения представления числовых литералов. Используемый язык программирования - zig.
+            </p>
+            <a href="https://github.com/Lamagraph/bancai" target="_blank" class="text-blue-600 underline hover:text-blue-800 visited:text-purple-600">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
   <div id="contacts">Ссылки (vk, github, sourcecraft)</div>
